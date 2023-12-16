@@ -16,7 +16,8 @@ export const coxRossRubenstein: ModelRoute = {
         onText: 'European',
         offText: 'American',
         initialValue: true,
-        dataType: 'boolean'
+        dataType: 'boolean',
+        FormFieldGridProps: { xs: 6 },
       },
       {
         name: 'isCall',
@@ -25,7 +26,8 @@ export const coxRossRubenstein: ModelRoute = {
         onText: 'Call',
         offText: 'Put',
         initialValue: true,
-        dataType: 'boolean'
+        dataType: 'boolean',
+        FormFieldGridProps: { xs: 6 },
       },
       {
         name: 'assetPrice',
@@ -38,7 +40,8 @@ export const coxRossRubenstein: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'strikePrice',
@@ -51,7 +54,8 @@ export const coxRossRubenstein: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'timeToExpiry',
@@ -64,7 +68,8 @@ export const coxRossRubenstein: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.5
+        initialValue: 0.5,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'riskFreeRate',
@@ -77,7 +82,8 @@ export const coxRossRubenstein: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.005
+        initialValue: 0.005,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'costOfCarry',
@@ -90,7 +96,8 @@ export const coxRossRubenstein: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.003
+        initialValue: 0.003,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'volatility',
@@ -103,7 +110,8 @@ export const coxRossRubenstein: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.25
+        initialValue: 0.25,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'steps',
@@ -116,7 +124,8 @@ export const coxRossRubenstein: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 200
+        initialValue: 200,
+        FormFieldGridProps: { xs: 2 },
       }
     ]
   },

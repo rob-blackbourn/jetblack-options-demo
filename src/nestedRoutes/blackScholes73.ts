@@ -17,7 +17,8 @@ const blackScholes73: ModelRoute = {
         onText: 'Call',
         offText: 'Put',
         initialValue: true,
-        dataType: 'boolean'
+        dataType: 'boolean',
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'assetPrice',
@@ -30,7 +31,8 @@ const blackScholes73: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'strikePrice',
@@ -43,7 +45,8 @@ const blackScholes73: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'timeToExpiry',
@@ -56,7 +59,8 @@ const blackScholes73: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.5
+        initialValue: 0.5,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'riskFreeRate',
@@ -69,7 +73,8 @@ const blackScholes73: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.005
+        initialValue: 0.005,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'volatility',
@@ -82,7 +87,8 @@ const blackScholes73: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.25
+        initialValue: 0.25,
+        FormFieldGridProps: { xs: 2 },
       }
     ]
   },

@@ -15,7 +15,8 @@ export const jarrowRudd: ModelRoute = {
         component: componentTypes.SWITCH,
         onText: 'European',
         offText: 'American',
-        initialValue: true
+        initialValue: true,
+        FormFieldGridProps: { xs: 6 },
       },
       {
         name: 'isCall',
@@ -23,7 +24,8 @@ export const jarrowRudd: ModelRoute = {
         component: componentTypes.SWITCH,
         onText: 'Call',
         offText: 'Put',
-        initialValue: true
+        initialValue: true,
+        FormFieldGridProps: { xs: 6 },
       },
       {
         name: 'assetPrice',
@@ -36,7 +38,8 @@ export const jarrowRudd: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'strikePrice',
@@ -49,7 +52,8 @@ export const jarrowRudd: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'timeToExpiry',
@@ -62,7 +66,8 @@ export const jarrowRudd: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.5
+        initialValue: 0.5,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'riskFreeRate',
@@ -75,7 +80,8 @@ export const jarrowRudd: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.005
+        initialValue: 0.005,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'costOfCarry',
@@ -88,7 +94,8 @@ export const jarrowRudd: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.003
+        initialValue: 0.003,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'volatility',
@@ -101,7 +108,8 @@ export const jarrowRudd: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.25
+        initialValue: 0.25,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'steps',
@@ -114,7 +122,8 @@ export const jarrowRudd: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 200
+        initialValue: 200,
+        FormFieldGridProps: { xs: 2 },
       }
     ]
   },

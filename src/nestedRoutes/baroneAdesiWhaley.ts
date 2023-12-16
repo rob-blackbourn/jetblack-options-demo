@@ -17,7 +17,8 @@ export const baroneAdesiWhaley: ModelRoute = {
         onText: 'Call',
         offText: 'Put',
         initialValue: true,
-        dataType: 'boolean'
+        dataType: 'boolean',
+        FormFieldGridProps: { xs: 12 },
       },
       {
         name: 'assetPrice',
@@ -30,7 +31,8 @@ export const baroneAdesiWhaley: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'strikePrice',
@@ -43,7 +45,8 @@ export const baroneAdesiWhaley: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 100
+        initialValue: 100,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'timeToExpiry',
@@ -56,7 +59,8 @@ export const baroneAdesiWhaley: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.5
+        initialValue: 0.5,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'riskFreeRate',
@@ -69,7 +73,8 @@ export const baroneAdesiWhaley: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.005
+        initialValue: 0.005,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'costOfCarry',
@@ -82,7 +87,8 @@ export const baroneAdesiWhaley: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.003
+        initialValue: 0.003,
+        FormFieldGridProps: { xs: 2 },
       },
       {
         name: 'volatility',
@@ -95,7 +101,8 @@ export const baroneAdesiWhaley: ModelRoute = {
             type: validatorTypes.REQUIRED
           }
         ],
-        initialValue: 0.25
+        initialValue: 0.25,
+        FormFieldGridProps: { xs: 2 },
       }
     ]
   },
