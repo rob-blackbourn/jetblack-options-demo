@@ -14,7 +14,7 @@ export function valueOption(
 
   const analyticImports = [
     'price',
-    'make_bumper',
+    'make_numeric_greeks',
     ...Object.entries(analyticsPrototypes)
       .filter(([, args]) => args != null)
       .map(([name]) => name)
@@ -39,7 +39,7 @@ ${extractArgs}
 
 analytics = ${analyticValuations}
 
-ng = make_bumper(${bumpFactoryPrototype.join(', ')})
+ng = make_numeric_greeks(${bumpFactoryPrototype.join(', ')})
 
 numerics = { ${Object.keys(analyticsPrototypes).map(
     greek => `'${greek}': ng.${greek}(${bumpPrototype.join(', ')})`
